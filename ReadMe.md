@@ -1,6 +1,6 @@
 # AutoGluon Test Case on Titanic Dataset with Kaggle
 
-This repo is designed to show the basic function of AutoGluon and Kaggle for your Machine Learning and Data Science Practices.
+This repo is designed to show the basic function of AutoGluon and Kaggle API for your Machine Learning and Data Science Practices with the Titanic dataset.
 
 ## Step 1: Create a new python development environment and install packages
 

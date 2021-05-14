@@ -48,9 +48,73 @@ Run the model:
 python run.py
 ```
 
-You will genearate the model and other files at the `model` folder.
+You will generate the model and other files at the `model` folder.
+File structure in the folder:
+
+```bash
+(AutoGluon) ➜  autogluon-casestudy git:(master) tree model
+    model
+    ├── learner.pkl
+    ├── models
+    │   ├── CatBoost
+    │   │   └── model.pkl
+    │   ├── ExtraTreesEntr
+    │   │   └── model.pkl
+    │   ├── ExtraTreesGini
+    │   │   └── model.pkl
+    │   ├── KNeighborsDist
+    │   │   └── model.pkl
+    │   ├── KNeighborsUnif
+    │   │   └── model.pkl
+    │   ├── LightGBM
+    │   │   └── model.pkl
+    │   ├── LightGBMLarge
+    │   │   └── model.pkl
+    │   ├── LightGBMXT
+    │   │   └── model.pkl
+    │   ├── NeuralNetFastAI
+    │   │   ├── model-internals.pkl
+    │   │   └── model.pkl
+    │   ├── NeuralNetMXNet
+    │   │   ├── model.pkl
+    │   │   └── net.params
+    │   ├── RandomForestEntr
+    │   │   └── model.pkl
+    │   ├── RandomForestGini
+    │   │   └── model.pkl
+    │   ├── WeightedEnsemble_L2
+    │   │   ├── model.pkl
+    │   │   └── utils
+    │   │       ├── model_template.pkl
+    │   │       └── oof.pkl
+    │   ├── XGBoost
+    │   │   └── model.pkl
+    │   └── trainer.pkl
+    ├── predictor.pkl
+    └── utils
+        └── data
+            ├── X.pkl
+            ├── X_val.pkl
+            ├── y.pkl
+            └── y_val.pkl
+
+18 directories, 25 files
+```
 
 And also create the `submission.csv` for Kaggle.
+
+```bash
+(AutoGluon) ➜  autogluon-casestudy git:(master) tree -L 1
+.
+├── ReadMe.md
+├── gender_submission.csv
+├── model
+├── run.py
+├── submission.csv <------ This is the file to be submitted to Kaggel.
+├── test.csv
+├── titanic.zip
+└── train.csv
+```
 
 You can submit your prediction by:
 
@@ -58,7 +122,7 @@ You can submit your prediction by:
 kaggle competitions submit -c titanic -f submission.csv -m "msg"
 ```
 
-and visit the Kaggle website to see your ranking: https://www.kaggle.com/c/titanic/leaderboard#score.
+and then visit the Kaggle website to see your ranking: https://www.kaggle.com/c/titanic/leaderboard#score.
 
 ## Reference
 

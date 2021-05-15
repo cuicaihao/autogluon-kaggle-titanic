@@ -143,3 +143,8 @@ cython_debug/
 model/
 *.csv
 *.zip
+
+# notebooks
+notebooks/agModels-predictAge/
+notebooks/agModels-predictClass/
+notebooks/AutogluonModels/

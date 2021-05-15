@@ -9,6 +9,11 @@ predictor = TabularPredictor(label=label,
 import pandas as pd
 
 test_data = TabularDataset('test.csv')
+
+predictor = TabularPredictor.load(
+    save_path
+)  # unnecessary, just demonstrates how to load previously-trained predictor from file
+
 preds = predictor.predict(test_data.drop(columns=[id]))
 submission = pd.DataFrame({id: test_data[id], label: preds})
 submission.to_csv('submission.csv', index=False)

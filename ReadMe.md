@@ -137,3 +137,5 @@ and then visit the Kaggle website to see your ranking: https://www.kaggle.com/c/
 5. [Kaggle](https://www.kaggle.com/)
 
 6. [Kaggle Python API](https://github.com/Kaggle/kaggle-api)
+
+7. [知乎 李沐 10 行代码打败 90%数据科学家？ 09-May-2021 ](https://www.zhihu.com/zvideo/1374716867127492609)

@@ -137,7 +137,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-
 # addon
 .vscode/
 model/
@@ -148,3 +147,6 @@ model/
 notebooks/agModels-predictAge/
 notebooks/agModels-predictClass/
 notebooks/AutogluonModels/
+
+# data file
+notebooks/oxford-iiit-pet/

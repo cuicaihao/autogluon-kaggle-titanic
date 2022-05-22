@@ -17,9 +17,9 @@ pip install autogluon
 
 ## Step 2: Register Kaggle and Install Kaggle API
 
-To use the Kaggle API, sign up for a Kaggle account at https://www.kaggle.com.
+To use the Kaggle API, sign up for a Kaggle account at <https://www.kaggle.com>.
 
-Then go to the `Account` tab of your user profile (https://www.kaggle.com/<username>/account) and select `Create API Token`.
+Then go to the `Account` tab of your user profile (<https://www.kaggle.com/><username>/account) and select `Create API Token`.
 
 This will trigger the download of kaggle.json, a file containing your API credentials.
 
@@ -122,7 +122,7 @@ You can submit your prediction by:
 kaggle competitions submit -c titanic -f submission.csv -m "msg"
 ```
 
-and then visit the Kaggle website to see your ranking: https://www.kaggle.com/c/titanic/leaderboard#score.
+and then visit the Kaggle website to see your ranking: <https://www.kaggle.com/c/titanic/leaderboard#score>.
 
 ## Reference
 
@@ -138,4 +138,4 @@ and then visit the Kaggle website to see your ranking: https://www.kaggle.com/c/
 
 6. [Kaggle Python API](https://github.com/Kaggle/kaggle-api)
 
-7. [知乎 李沐 10 行代码打败 90%数据科学家？ 09-May-2021 ](https://www.zhihu.com/zvideo/1374716867127492609)
+7. [知乎 李沐 10 行代码打败 90%数据科学家？ 09-May-2021](https://www.zhihu.com/zvideo/1374716867127492609)
